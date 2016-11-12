@@ -29,4 +29,4 @@ client.fetch(url, param, function(err, $, res){
             request(src).pipe(fs.createWriteStream(fname));
         }
     });
-})
+});
