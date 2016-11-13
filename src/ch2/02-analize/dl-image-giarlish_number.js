@@ -15,7 +15,7 @@ var url = "http://www.tbs.co.jp/anime/gn/special/present01.html";
 var param = {};
 //HTMLファイルの取得
 client.fetch(url, param, function(err, $, res){
-    if(err){ console.log("error"); reutrn; }
+    if(err){ console.log("error"); return; }
     //リンクを抽出して表示
     $("img").each(function(idx){
         var src = $(this).attr('src');
